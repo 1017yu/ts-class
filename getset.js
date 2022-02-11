@@ -16,3 +16,4 @@ class Person4 {
 const p4 = new Person4("Kled", 25);
 console.log(p4.name); // get 을 하는 함수 getter
 p4.name = "Kled"; // set 을 하는 함수 setter
+console.log(p4.name) 
