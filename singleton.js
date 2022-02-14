@@ -22,15 +22,20 @@ class Parent {
     print() {
         console.log(`이름은 ${this._name}이고, 나이는 ${this._age}살 입니다`);
     }
+    printName() {
+        console.log(this._name);
+    }
 }
 const p = new Parent('Mark', 39);
 p.print();
+// 이름은 Mark이고, 나이는 39살 입니다
 class Child extends Parent {
     constructor(age) {
         super('Mark Jr', age);
-        this._name = 'Mark Jr.';
         this.gender = 'male';
+        this.printName();
     }
 }
 const a3 = new Child(5);
 a3.print();
+// 이름은 Mark Jr.이고, 나이는 5살 입니다
